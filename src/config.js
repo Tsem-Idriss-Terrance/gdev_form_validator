@@ -1,0 +1,1 @@
+export const gdev_home_page = "http://localhost:5173";

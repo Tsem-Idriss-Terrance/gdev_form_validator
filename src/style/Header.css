@@ -1,0 +1,16 @@
+.active_nav{
+    display: block !important;
+    position: absolute !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: black !important;
+    top: 0 !important;
+    left: 0 !important;
+    
+}
+
+.active_nav > div {
+    display: flex !important;
+    flex-direction: column-reverse;
+    padding: 20px 0;
+}
