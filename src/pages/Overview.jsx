@@ -215,7 +215,7 @@ import "gdev_form_validator"
 
   <div class="gdev-field-wrapper">
     <div class="capsule">
-      <label for="fullname"></label>
+      <label for="fullname">User name</label>
       <input type="text" id="fullname" placeholder="" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
     </div>
     <span class="gdev-error"></span>
@@ -223,7 +223,7 @@ import "gdev_form_validator"
 
   <div class="gdev-field-wrapper">
     <div class="capsule">
-      <label for="password"></label>
+      <label for="password">Password</label>
       <input type="password"  placeholder="" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
     </div>
     <span class="gdev-error"></span>
