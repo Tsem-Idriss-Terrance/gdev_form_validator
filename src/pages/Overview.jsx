@@ -155,9 +155,9 @@ import "gdev_form_validator"
                   );
                 }}
               >
-                here.
-              </span>
-              and include it to your project as follows.
+                here. 
+              </span>{" "}
+               and include it to your project as follows.
             </p>
             <CodeHighlighter
               code={`<script src="path/to/gdev_form_validator.js"></script>`}
