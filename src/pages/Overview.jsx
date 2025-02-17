@@ -1,6 +1,7 @@
 import {useEffect} from "react";
 import CodeHighlighter from "../components/CodeHighlighter";
 import {toTop} from "../utils/scroller";
+import downloadFile from "../utils/downloadFile";
 
 export default function Overview() {
   useEffect(() => {
@@ -145,8 +146,19 @@ import "gdev_form_validator"
           <div>
             <li className="gt-5 fw-bold">Download and link manually</li>
             <p>
-              Download the built JS file <a href="#">here.</a> and include it to
-              your project as follows.
+              Download the built JS file{" "}
+              <span
+                className="text-primary"
+                onClick={() => {
+                  downloadFile(
+                    `/gdev_form_validator.js`,
+                    "gdev_form_validator"
+                  );
+                }}
+              >
+                here.
+              </span>{" "}
+              and include it to your project as follows.
             </p>
             <CodeHighlighter
               code={`<script src="path/to/gdev_form_validator.js"></script>`}
@@ -172,13 +184,13 @@ import "gdev_form_validator"
 <form id="myForm" lang="en" form_validator_design="classic" response_exclude='["pToggle"]'>
 
   <div class="gdev-field-wrapper">
-    <label for="fullname"></label>
+    <label for="fullname">User Name</label>
     <input type="text" id="fullname" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
     <span class="gdev-error"></span>
   </div>
 
   <div class="gdev-field-wrapper">
-    <label for="password"></label>
+    <label for="password">Password</label>
     <input type="password" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
     <span class="gdev-error"></span>
   </div>
@@ -200,12 +212,12 @@ import "gdev_form_validator"
             </li>
             <CodeHighlighter
               code={`
-<form id="myForm" lang="en" form_validation_design="classic" response_exclude='["pToggle"]'>
+<form id="myForm" lang="en" form_validator_design="floating-label" response_exclude='["pToggle"]'>
 
   <div class="gdev-field-wrapper">
     <div class="capsule">
       <label for="fullname"></label>
-      <input type="text" id="fullname" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
+      <input type="text" id="fullname" placeholder="" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
     </div>
     <span class="gdev-error"></span>
   </div>
@@ -213,7 +225,7 @@ import "gdev_form_validator"
   <div class="gdev-field-wrapper">
     <div class="capsule">
       <label for="password"></label>
-      <input type="password" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
+      <input type="password"  placeholder="" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
     </div>
     <span class="gdev-error"></span>
   </div>
