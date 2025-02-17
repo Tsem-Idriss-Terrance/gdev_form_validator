@@ -24,6 +24,13 @@ const Number = () => {
     </div>
     <span class="gdev-error"></span>
   </div>`}
+      iftaCode={`<div class="gdev-field-wrapper">
+    <div class="capsule">
+     <label for="magicNumber">Magic Number</label>
+     <input type="number" placeholder="Enter magic number" id="magicNumber" name="magicNumber" gdev_props='{"name":"magicNumber","type":"number", "min": "7"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>`}
       description4="This configuration will require the user to provide a magic number greather than 6."
       properties={[
         {

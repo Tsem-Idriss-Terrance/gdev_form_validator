@@ -54,6 +54,33 @@ const Password = () => {
 </div>
 
 `}
+      iftaCode={`<div class="gdev-field-wrapper">
+    <div class="capsule">
+     <label for="password">password</label>
+     <input 
+      id="password"
+      type="password"
+      gdev_props='{"type":"password","name":"password", "securityLevel": "s3", "confirmWith":"cpassword"}' 
+      placeholder="password" 
+     />
+    </div>
+    <span class="gdev-error"></span>
+</div>
+
+<div class="gdev-field-wrapper">
+    <div class="capsule">
+     <label for="cpassword">confirm password</label>
+     <input 
+      id="cpassword"
+      type="password"
+      gdev_props='{"type":"password","name":"cpassword", "securityLevel": "s3", "confirmWith":"password"}' 
+      placeholder="Enter password again" 
+     />
+    </div>
+    <span class="gdev-error"></span>
+</div>
+
+`}
       description4="This configuration will ensure that the password field requires at least 12 characters and max 17 of which 3 numbers, 3 uppercase and 3 lowercase. and also it will validate the two passwords we linked. "
       properties={[
         {

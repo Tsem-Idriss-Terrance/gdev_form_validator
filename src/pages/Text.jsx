@@ -15,9 +15,16 @@ const Text = () => {
     <span class="gdev-error"></span>
   </div>`}
       floatingCode={` <div class="gdev-field-wrapper">
-    <div class="capsule>
-      <label for="fullname"></label>
+    <div class="capsule">
+      <label for="fullname">User name</label>
       <input type="text" id="fullname" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>`}
+      iftaCode={` <div class="gdev-field-wrapper">
+    <div class="capsule">
+      <label for="fullname">User name</label>
+      <input type="text" id="fullname" placeholder="Enter fullname" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
     </div>
     <span class="gdev-error"></span>
   </div>`}

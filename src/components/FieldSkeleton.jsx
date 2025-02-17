@@ -33,18 +33,24 @@ export default function FieldSkeleton(props) {
       <div id="configuration">
         <div id="classic-code-sample">
           <h4 className="fw-bold">Example Configuration (classic design)</h4>
-          
-            <CodeHighlighter code={props.classicCode} language="markup" />
-          
+
+          <CodeHighlighter code={props.classicCode} language="markup" />
         </div>
 
         <div id="floating-code-sample">
           <h4 className="fw-bold">
             Example Configuration (floating-label design)
           </h4>
-          
-            <CodeHighlighter code={props.floatingCode} language="markup" />
-          
+
+          <CodeHighlighter code={props.floatingCode} language="markup" />
+        </div>
+
+        <div id="floating-code-sample">
+          <h4 className="fw-bold">
+            Example Configuration (ifta-label design)
+          </h4>
+
+          <CodeHighlighter code={props.iftaCode} language="markup" />
         </div>
 
         <p className="gt-4 text-danger">{props.description4}</p>

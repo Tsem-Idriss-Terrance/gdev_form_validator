@@ -63,8 +63,10 @@ const Checkbox = () => {
               </ul>
             </div>
           </p>
-          <CodeHighlighter
-            code={`<div className="gdev-field-wrapper">
+          <div>
+            <span className="fw-bold">classic</span>
+            <CodeHighlighter
+              code={`<div className="gdev-field-wrapper">
     <label htmlFor="name">Name</label>
     <input type="text" id="name" gdev_props='{"name":"name", "type":"text", "minWord":"2"}'/>
 </div>
@@ -73,8 +75,47 @@ const Checkbox = () => {
     <label htmlFor="cn">clear name</label>
     <input type="checkbox" id="cn" gdev_props='{"name":"cn", "type":"checkbox", "value":"clear", "linkTo":"name,clear"}'/>
 </div>`}
-            language="markup"
-          />
+              language="markup"
+            />
+          </div>
+
+          <div>
+            <span className="fw-bold">floating-label</span>
+            <CodeHighlighter
+              code={`<div className="gdev-field-wrapper">
+  <div className="capsule">
+      <label htmlFor="name">Name</label>
+      <input type="text" placeholder="" id="name" gdev_props='{"name":"name", "type":"text", "minWord":"2"}'/>
+      <span className="gdev-error"></span>
+  </div>
+</div>
+
+<div className="gdev-field-wrapper">
+    <label htmlFor="cn">clear name</label>
+    <input type="checkbox" id="cn" gdev_props='{"name":"cn", "type":"checkbox", "value":"clear", "linkTo":"name,clear"}'/>
+</div>`}
+              language="markup"
+            />
+          </div>
+
+          <div>
+            <span className="fw-bold">ifta-label</span>
+            <CodeHighlighter
+              code={`<div className="gdev-field-wrapper">
+  <div className="capsule">
+      <label htmlFor="name">Name</label>
+      <input type="text" placeholder="Enter name" id="name" gdev_props='{"name":"name", "type":"text", "minWord":"2"}'/>
+      <span className="gdev-error"></span>
+  </div>
+</div>
+
+<div className="gdev-field-wrapper">
+    <label htmlFor="cn">clear name</label>
+    <input type="checkbox" id="cn" gdev_props='{"name":"cn", "type":"checkbox", "value":"clear", "linkTo":"name,clear"}'/>
+</div>`}
+              language="markup"
+            />
+          </div>
           <p>
             The above code links a checkbox to a text field with the
             relationship <strong>'clear'</strong>.
@@ -109,7 +150,7 @@ const Checkbox = () => {
     },
   ];
   return (
-    <div className="mx-5 my-4 wh-2 overflow-hidden">
+    <div className=" laptop-px-10 desktop-px-10 tablet-px-4 ipad-px-4 mobile-px-4 my-4 wh-2 overflow-hidden">
       <div>
         <h2 className="mb-3 fw-bold">Checkbox</h2>
         <p className="gt-5">

@@ -22,6 +22,13 @@ const Email = () => {
     </div>
     <span class="gdev-error"></span>
   </div>`}
+      iftaCode={`<div class="gdev-field-wrapper">
+    <div class="capsule">
+     <label for="email">Email</label>
+     <input type="text" placeholder="Enter email" id="email" name="email" gdev_props='{"name":"email","type":"email", "provider": "gmail"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>`}
       description4="This configuration will require the user to provide a valid gmail email."
       properties={[
         {

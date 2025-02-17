@@ -43,6 +43,13 @@ const Phone = () => {
     </div>
     <span class="gdev-error"></span>
   </div>`}
+      iftaCode={`<div class="gdev-field-wrapper">
+    <div class="capsule">
+     <label for="phone">Phone</label>
+     <input type="tel" placeholder="Enter phone number" id="phone" name="email" gdev_props='{"name":"phone","type":"tel", "country": "cameroon, nigeria"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>`}
       description4="This configuration will require the user to provide a valid phone number from cameroon or nigeria."
       properties={[
         {

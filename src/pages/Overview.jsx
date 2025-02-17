@@ -85,10 +85,7 @@ export default function Overview() {
             </div>
           </form>
           <li className="gt-5 fw-bold  mt-4">
-            ifta-label{" "}
-            <span className="gt-3 text-danger">
-              (same structure as floating)
-            </span>
+            ifta-label
             <form
               id="myForm"
               style={{width: "400px"}}
@@ -155,9 +152,9 @@ import "gdev_form_validator"
                   );
                 }}
               >
-                here. 
+                here.
               </span>{" "}
-               and include it to your project as follows.
+              and include it to your project as follows.
             </p>
             <CodeHighlighter
               code={`<script src="path/to/gdev_form_validator.js"></script>`}
@@ -225,6 +222,42 @@ import "gdev_form_validator"
     <div class="capsule">
       <label for="password">Password</label>
       <input type="password"  placeholder="" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>
+
+  <div class="gdev-field-wrapper">
+    <label for="pToggle">show password</label>
+    <input type="checkbox" id="pToggle" name="pToggle" gdev_props='{"name":"pToggle","type":"checkbox", "value": "pToggle", "linkTo":"password,passwordShowToggle"}'/>
+    <span class="gdev-error"></span>
+  </div>
+
+</form>
+  `}
+              language="markup"
+            />
+          </div>
+
+          <div className="my-5">
+            <li className="fw-bold" id="fl">
+              ifta-label
+            </li>
+            <CodeHighlighter
+              code={`
+<form id="myForm" lang="en" form_validator_design="ifta-label" response_exclude='["pToggle"]'>
+
+  <div class="gdev-field-wrapper">
+    <div class="capsule">
+      <label for="fullname">User name</label>
+      <input type="text" id="fullname" placeholder="Enter user name" name="fullname" gdev_props='{"name":"fullname","type":"text", "minWord": "2"}'/>
+    </div>
+    <span class="gdev-error"></span>
+  </div>
+
+  <div class="gdev-field-wrapper">
+    <div class="capsule">
+      <label for="password">Password</label>
+      <input type="password"  placeholder="Enter password" id="password" name="password" gdev_props='{"name":"password","type":"password", "securityLevel": "s3"}'/>
     </div>
     <span class="gdev-error"></span>
   </div>
