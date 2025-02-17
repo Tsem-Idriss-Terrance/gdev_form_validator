@@ -147,7 +147,7 @@ import "gdev_form_validator"
             <p>
               Download the built JS file{" "}
               <span
-                className="text-primary"
+                className="text-primary cursor-ptr"
                 onClick={() => {
                   downloadFile(
                     `/gdev_form_validator.js`,
@@ -156,7 +156,7 @@ import "gdev_form_validator"
                 }}
               >
                 here.
-              </span>{" "}
+              </span>
               and include it to your project as follows.
             </p>
             <CodeHighlighter
