@@ -4,7 +4,7 @@ import miniLogo from "/miniLogo.png";
 import "../style/Header.css";
 import AppContext from "../context/AppContext";
 import {gdev_home_page} from "../config";
-//import downloadFile from "../utils/DownloadFile";
+import downloadFile from "../utils/DownloadFile";
 export const Header = () => {
   const [activeNav, setActiveNav] = useState("");
   const {setActiveNav: setActiveSideBar} = useContext(AppContext);

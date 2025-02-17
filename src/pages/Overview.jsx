@@ -1,8 +1,7 @@
 import {useEffect} from "react";
 import CodeHighlighter from "../components/CodeHighlighter";
 import {toTop} from "../utils/scroller";
-import downloadFile from "../utils/downloadFile";
-
+import downloadFile from "../utils/DownloadFile";
 export default function Overview() {
   useEffect(() => {
     toTop();
