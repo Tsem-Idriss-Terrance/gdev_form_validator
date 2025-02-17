@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import AppContext from "./context/AppContext";
 import {useEffect, useState} from "react";
+import Footer from "./components/Footer";
 export default function App() {
    useEffect(() => {
      // Create script element
@@ -34,6 +35,7 @@ export default function App() {
           <Navigation />
         </div>
       </section>
+      <Footer />
     </AppContext.Provider>
   );
 }
